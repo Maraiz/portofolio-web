@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> - Portfolio</title>
+    <title>Maulana Nurfaizi Anugerah - Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <nav>
             <div class="logo">MNA</div>
-            <ul class="nav-links">
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#skills">Keahlian</a></li>
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <div class="theme-toggle" onclick="toggleTheme()">
+                    <div class="toggle-ball">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -38,13 +47,17 @@
             <div class="about-content fade-in">
                 <div class="about-image">
                     <div class="profile-img">
-                        <img src="profil.jpg" alt="Profile">
+                        <img src="profil.jpg" alt="Profile" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-user\'></i>';">
                     </div>
                 </div>
                 <div class="about-text">
-                    <p>Saya adalah seorang Full Stack Developer yang berpengalaman lebih dari 5 tahun dalam mengembangkan aplikasi web modern. Passion saya terletak pada menciptakan solusi digital yang inovatif dan user-friendly.</p>
-                    <p>Dengan keahlian dalam berbagai teknologi seperti React, Node.js, dan Python, saya selalu berusaha mengikuti perkembangan teknologi terbaru untuk memberikan hasil terbaik bagi klien.</p>
-                    <p>Selain coding, saya juga memiliki minat dalam UI/UX design dan percaya bahwa kombinasi technical skill dan design thinking adalah kunci untuk menciptakan produk yang luar biasa.</p>
+                    <p>Saya adalah seorang Full Stack Developer yang berpengalaman lebih dari 5 tahun dalam
+                        mengembangkan aplikasi web modern. Passion saya terletak pada menciptakan solusi digital yang
+                        inovatif dan user-friendly.</p>
+                    <p>Dengan keahlian dalam berbagai teknologi seperti React, Node.js, dan Python, saya selalu berusaha
+                        mengikuti perkembangan teknologi terbaru untuk memberikan hasil terbaik bagi klien.</p>
+                    <p>Selain coding, saya juga memiliki minat dalam UI/UX design dan percaya bahwa kombinasi technical
+                        skill dan design thinking adalah kunci untuk menciptakan produk yang luar biasa.</p>
                     <a href="#" class="download-cv-btn" onclick="downloadCV()">
                         <i class="fas fa-download"></i>
                         Download CV
@@ -64,21 +77,21 @@
                         <i class="fab fa-react"></i>
                     </div>
                     <h3>Frontend Development</h3>
-                    <p>React, Vue.js, Angular, HTML5, CSS3, JavaScript ES6+, TypeScript</p>
+                    <p>React, Vue.js, HTML5, CSS3, JavaScript ES6+</p>
                 </div>
                 <div class="skill-card fade-in">
                     <div class="skill-icon">
                         <i class="fas fa-server"></i>
                     </div>
                     <h3>Backend Development</h3>
-                    <p>Node.js, Python, PHP, Express.js, Django, RESTful APIs, GraphQL</p>
+                    <p>Node.js, Python, PHP, Express.js, RESTful APIs</p>
                 </div>
                 <div class="skill-card fade-in">
                     <div class="skill-icon">
                         <i class="fas fa-database"></i>
                     </div>
                     <h3>Database & DevOps</h3>
-                    <p>MongoDB, PostgreSQL, MySQL, Docker, AWS, CI/CD, Git</p>
+                    <p>MongoDB, PostgreSQL, MySQL, Git</p>
                 </div>
                 <div class="skill-card fade-in">
                     <div class="skill-icon">
@@ -98,14 +111,14 @@
             <div class="projects-grid">
                 <div class="project-card fade-in">
                     <div class="project-image">
-                        <i class="fas fa-shopping-cart"></i>
+                        <img src="fitcall.png" alt="Fitcal Project" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-utensils\'></i>';">
                     </div>
                     <div class="project-content">
-                        <h3>E-Commerce Platform</h3>
-                        <p>Platform e-commerce lengkap dengan fitur pembayaran terintegrasi, dashboard admin, dan sistem inventori real-time.</p>
+                        <h3>Fitcal</h3>
+                        <p>Platform prediksi kalori berdasarkan data gambar</p>
                         <div class="project-links">
-                            <a href="#" class="project-link">Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
+                            <a href="https://jade-tapioca-8a8e22.netlify.app/#/" class="project-link">Demo</a>
+                            <a href="https://github.com/Maraiz/Frontend-Capstone" class="project-link">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -115,7 +128,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Analytics Dashboard</h3>
-                        <p>Dashboard analitik real-time untuk monitoring performa bisnis dengan visualisasi data yang interaktif.</p>
+                        <p>Dashboard analitik real-time untuk monitoring performa bisnis dengan visualisasi data yang
+                            interaktif.</p>
                         <div class="project-links">
                             <a href="#" class="project-link">Demo</a>
                             <a href="#" class="project-link">GitHub</a>
@@ -148,22 +162,22 @@
                     <h3>Mari Berkolaborasi!</h3>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>john.doe@email.com</span>
+                        <span>maulanalana363@gmail.com</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span>+62 812-3456-7890</span>
+                        <span>+6281259136461</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Jakarta, Indonesia</span>
+                        <span>Dsn. Kepatihan RT 01/ RW 01 Ds. Cluring Kec. Cluring Kab. Banyuwangi</span>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
-                        <span>linkedin.com/in/johndoe</span>
+                        <span>www.linkedin.com/in/maulana-nurfaizi-anugerah-98b8642b1</span>
                     </div>
                 </div>
-                <form class="contact-form fade-in">
+                <form class="contact-form fade-in" id="contactForm">
                     <div class="form-group">
                         <label for="name">Nama</label>
                         <input type="text" id="name" name="name" required>
@@ -180,7 +194,14 @@
                         <label for="message">Pesan</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">Kirim Pesan</button>
+                    <!-- Message display area -->
+                    <div id="formMessage" class="form-message"></div>
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span class="btn-text">Kirim Pesan</span>
+                        <span class="btn-loader" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Mengirim...
+                        </span>
+                    </button>
                 </form>
             </div>
         </div>
@@ -199,72 +220,7 @@
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Header background on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-            } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-            }
-        });
-
-        // Form submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Pesan berhasil dikirim! Terima kasih telah menghubungi saya.');
-            this.reset();
-        });
-
-        // Download CV function
-        function downloadCV() {
-            // Ganti dengan URL file CV Anda yang sesungguhnya
-            const cvUrl = 'path/to/your/cv.pdf'; // Ubah ini dengan path CV Anda
-            
-            // Untuk demo, kita tampilkan alert
-            alert('Fitur download CV! Silakan ganti URL di function downloadCV() dengan link CV Anda.');
-            
-            // Uncomment baris di bawah ini setelah Anda memiliki file CV:
-            // const link = document.createElement('a');
-            // link.href = cvUrl;
-            // link.download = 'John_Doe_CV.pdf';
-            // document.body.appendChild(link);
-            // link.click();
-            // document.body.removeChild(link);
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
