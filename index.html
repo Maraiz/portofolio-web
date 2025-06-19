@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">MNA</div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Maulana Nurfaizi Anugerah</h1>
+            <p class="subtitle">Full Stack Developer & UI/UX Designer</p>
+            <a href="#contact" class="cta-button">Mari Bekerja Sama</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">Tentang Saya</h2>
+            <div class="about-content fade-in">
+                <div class="about-image">
+                    <div class="profile-img">
+                        <img src="profil.jpg" alt="Profile">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Saya adalah seorang Full Stack Developer yang berpengalaman lebih dari 5 tahun dalam mengembangkan aplikasi web modern. Passion saya terletak pada menciptakan solusi digital yang inovatif dan user-friendly.</p>
+                    <p>Dengan keahlian dalam berbagai teknologi seperti React, Node.js, dan Python, saya selalu berusaha mengikuti perkembangan teknologi terbaru untuk memberikan hasil terbaik bagi klien.</p>
+                    <p>Selain coding, saya juga memiliki minat dalam UI/UX design dan percaya bahwa kombinasi technical skill dan design thinking adalah kunci untuk menciptakan produk yang luar biasa.</p>
+                    <a href="#" class="download-cv-btn" onclick="downloadCV()">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>React, Vue.js, Angular, HTML5, CSS3, JavaScript ES6+, TypeScript</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Python, PHP, Express.js, Django, RESTful APIs, GraphQL</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database & DevOps</h3>
+                    <p>MongoDB, PostgreSQL, MySQL, Docker, AWS, CI/CD, Git</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Figma, Adobe XD, Sketch, Prototyping, User Research, Wireframing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Proyek Terbaru</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Platform e-commerce lengkap dengan fitur pembayaran terintegrasi, dashboard admin, dan sistem inventori real-time.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Dashboard analitik real-time untuk monitoring performa bisnis dengan visualisasi data yang interaktif.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mobile Banking App</h3>
+                        <p>Aplikasi mobile banking dengan fokus pada user experience dan keamanan tingkat tinggi.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Hubungi Saya</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3>Mari Berkolaborasi!</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>john.doe@email.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+62 812-3456-7890</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Jakarta, Indonesia</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/johndoe</span>
+                    </div>
+                </div>
+                <form class="contact-form fade-in">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subjek</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 Maulana Nurfaizi Anugerah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Pesan berhasil dikirim! Terima kasih telah menghubungi saya.');
+            this.reset();
+        });
+
+        // Download CV function
+        function downloadCV() {
+            // Ganti dengan URL file CV Anda yang sesungguhnya
+            const cvUrl = 'path/to/your/cv.pdf'; // Ubah ini dengan path CV Anda
+            
+            // Untuk demo, kita tampilkan alert
+            alert('Fitur download CV! Silakan ganti URL di function downloadCV() dengan link CV Anda.');
+            
+            // Uncomment baris di bawah ini setelah Anda memiliki file CV:
+            // const link = document.createElement('a');
+            // link.href = cvUrl;
+            // link.download = 'John_Doe_CV.pdf';
+            // document.body.appendChild(link);
+            // link.click();
+            // document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
